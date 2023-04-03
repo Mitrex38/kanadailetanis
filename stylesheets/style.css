@@ -145,8 +145,6 @@ form.custom .custom.disabled { background-color: #ddd }
 @font-face { font-family: 'BitterRegular'; src: url('fonts/Bitter-Regular-webfont.eot'); src: url('fonts/Bitter-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Bitter-Regular-webfont.woff') format('woff'), url('fonts/Bitter-Regular-webfont.ttf') format('truetype'), url('fonts/Bitter-Regular-webfont.svg#BitterRegular') format('svg'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'BitterItalic'; src: url('fonts/Bitter-Italic-webfont.eot'); src: url('fonts/Bitter-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Bitter-Italic-webfont.woff') format('woff'), url('fonts/Bitter-Italic-webfont.ttf') format('truetype'), url('fonts/Bitter-Italic-webfont.svg#BitterItalic') format('svg'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'BitterBold'; src: url('fonts/Bitter-Bold-webfont.eot'); src: url('fonts/Bitter-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Bitter-Bold-webfont.woff') format('woff'), url('fonts/Bitter-Bold-webfont.ttf') format('truetype'), url('fonts/Bitter-Bold-webfont.svg#BitterBold') format('svg'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'ChunkFiveRegular'; src: url('fonts/Chunkfive-webfont.eot'); src: url('fonts/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Chunkfive-webfont.woff') format('woff'), url('fonts/Chunkfive-webfont.ttf') format('truetype'), url('fonts/Chunkfive-webfont.svg#ChunkFiveRegular') format('svg'); font-weight: normal; font-style: normal;}
-/* Correct FF custom dropdown height */
 @-moz-document url-prefix() { 
 	form.custom div.custom.dropdown a.selector { height: 30px }
 }
@@ -836,7 +834,6 @@ a:focus { outline: none }
 .flickr:hover { background: url(../images/socialpack/flickra.png) }
 .newsletter { width: 250px !important }
 .back-top-wrapper { width: 100%; position: absolute; overflow: hidden; height: 50px; display: block; }
-.back-top { bottom: 55px; right: 20px; margin-bottom: 0; display: block; position: fixed; display: scroll; display: none; }
 .back-top a { width: 50px; nowhitespace: afterproperty; height: 50px; display: block; text-align: center; text-transform: uppercase; text-decoration: none; background: #333 url(../images/up-arrow.png) no-repeat center center; border-radius: 5px; /* transition */ -webkit-transition: 1s;-moz-transition:1s;transition:1s; ; }
 .back-top a:hover { background-color: #333 } /* arrow icon (span tag) */
 .back-top span { width: 50px; nowhitespace: afterproperty; height: 50px; display: block; border-radius: 10px; /* transition */ -webkit-transition: 1s;-moz-transition:1s;transition:1s; ; }
@@ -853,7 +850,7 @@ a:focus { outline: none }
 .teamwrap h2 { text-transform: uppercase; color: #fff; text-align: center; position: relative; font-size: 17px; padding: 10px; background: rgba(0, 0, 0, 0.8); margin: 10px 0 0 0; }
 .teamwrap p { font-family: Georgia, serif; font-style: italic; font-size: 12px; position: relative; color: #fff; padding: 10px 20px 10px; text-align: center; }
 .teamwrap a.info { display: inline-block; text-decoration: none; padding: 7px 14px; background: #000; color: #fff; text-transform: uppercase; -webkit-box-shadow: 0 0 1px #000; -moz-box-shadow: 0 0 1px #000; box-shadow: 0 0 1px #000; }
-.teamwrap a.info: hover { -webkit-box-shadow: 0 0 5px #000; -moz-box-shadow: 0 0 5px #000; box-shadow: 0 0 5px #000; }
+.teamwrap a.info:hover { -webkit-box-shadow: 0 0 5px #000; -moz-box-shadow: 0 0 5px #000; box-shadow: 0 0 5px #000; }
 .teambox img { -webkit-transform: scaleY(1); -moz-transform: scaleY(1); -o-transform: scaleY(1); -ms-transform: scaleY(1); transform: scaleY(1); -webkit-transition: all 0.7s ease-in-out; -moz-transition: all 0.7s ease-in-out; -o-transition: all 0.7s ease-in-out; -ms-transition: all 0.7s ease-in-out; transition: all 0.7s ease-in-out; }
 .teambox .mask { background-color: #eee; -webkit-transition: all 0.5s linear; -moz-transition: all 0.5s linear; -o-transition: all 0.5s linear; -ms-transition: all 0.5s linear; transition: all 0.5s linear; -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); opacity: 0; }
 .teambox h2 { border-bottom: 1px solid rgba(0, 0, 0, 0.3); background: transparent; margin: 10px 40px 0px 40px; -webkit-transform: scale(); -moz-transform: scale(); -o-transform: scale(); -ms-transform: scale(); transform: scale(); color: #333; -webkit-transition: all 0.5s linear; -moz-transition: all 0.5s linear; -o-transition: all 0.5s linear; -ms-transition: all 0.5s linear; transition: all 0.5s linear; -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); opacity: 0; }
@@ -894,17 +891,7 @@ a.tags, .tags a {color:#fff;}
 #subheader {padding:22px 50px 23px 50px !important;}
 *******************************************************************************************************************
 *     Subheader Effects                                                                                                  
-*******************************************************************************************************************/
-  @font-face {
-    font-family: 'WebSymbolsRegular';
-    src: url('websymbols/websymbols-regular-webfont.eot');
-    src: url('websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('websymbols/websymbols-regular-webfont.woff') format('woff'),
-        url('websymbols/websymbols-regular-webfont.ttf') format('truetype'),
-        url('websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+*******************************************************************************************************************
 .ca-menu{
     padding:0;
 }
@@ -1138,11 +1125,11 @@ padding: 0px 40px;
 	height: 100%;
 	cursor: pointer;
 	border-right: 1px solid #555;	
-	-webkit-transition: background 0.2s ease;
-    -moz-transition: background 0.2s ease;
-    -o-transition: background 0.2s ease;
-    -ms-transition: background 0.2s ease;
-    transition: background 0.2s ease;
+	-webkit-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -ms-transition: background 0.4s ease;
+    transition: background 0.4s ease;
 }
 .ei-slider-thumbs li a:hover{
 	background-color: #f0f0f0;
@@ -1153,11 +1140,11 @@ padding: 0px 40px;
 	opacity: 0;
 	z-index: 999;
 	max-width: 100%;
-	-webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+	-webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    transition: all 0.8s ease;
 	-webkit-box-reflect: 
         below 0px -webkit-gradient(
             linear, 
