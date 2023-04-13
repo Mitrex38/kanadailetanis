@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="refresh" content="10; url=index.html" />
+	<title>Yükleme Ekranı</title>
+	<style>
+		body {
+			background-color: #FF0000; /* Kırmızı arka plan rengi */
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			font-size: 6rem;
+			color: #FFFFFF; /* Beyaz yazı rengi */
+			overflow: hidden;
+		}
+		
+		.loading-content {
+			position: relative;
+			animation: yavaş-dolma 4s ease-in-out forwards; /* Animasyon ayarları */
+		}
+		
+		.loading-content span {
+			display: inline-block;
+			animation: harf-animasyonu 4s ease-in-out forwards; /* Animasyon ayarları */
+		}
+		
+		@keyframes yavaş-dolma {
+			0% {
+				opacity: 0;
+			}
+			50% {
+				opacity: 0.5;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+		
+		@keyframes harf-animasyonu {
+			from {
+				transform: translateX(-100%);
+			}
+			to {
+				transform: translateX(0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="loading-content">
+		<span>K</span>
+		<span>A</span>
+		<span>N</span>
+		<span>A</span>
+		<span>D</span>
+		<span>A</span>
+	</div>
+</body>
+</html>
