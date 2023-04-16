@@ -10,7 +10,7 @@
 <meta charset="utf-8"/>
 <!-- Set the viewport width to device width for mobile -->
 <meta name="viewport" content="width=device-width"/>
-<title>Studio Francesca - Premium Theme by WowThemesNet</title>
+<title>Kanada</title>
 <!-- CSS Files-->
 <link rel="stylesheet" href="stylesheets/style.css">
 
@@ -21,8 +21,29 @@
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+<style>
+         #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+         }
+         .loader iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none; /* çerçeve yok */
+         }
+      </style>
 </head>
 <body>
+	<div id="loading-screen">
+		<div class="loader"><iframe src="Untitled-13.html"></iframe></div>
+	 </div>
 <!-- HIDDEN PANEL 
 ================================================== -->
 
@@ -198,7 +219,7 @@
 			<span class="ca-icon"><i class="fa fa-bullhorn"></i></span>
 			<div class="ca-content">
 				<h2 class="ca-main">Arkadaşlarını<br/>Bul</h2>
-				<h3 class="ca-sub">Yeni ardaşlar edinin.</h3>
+				<h3 class="ca-sub">Yeni arkadaşlarlar edinin.</h3>
 			</div>
 			</a>
 			</li>
@@ -337,5 +358,16 @@
 <script src="javascripts/hoverIntent.js"></script>
 <script src="javascripts/superfish.js"></script>
 <script src="javascripts/responsivemenu.js"></script>
+<script>
+      // Yüklenme ekranı görüntülenir
+      document.getElementById("loading-screen").style.display = "block";
+
+      // 2 saniye sonra yüklenme ekranı gizlenir
+      setTimeout(function() {
+      document.getElementById("loading-screen").style.display = "none";
+      document.getElementById("loading-screen").remove();
+      }, 6500);
+
+      </script>
 </body>
 </html>
