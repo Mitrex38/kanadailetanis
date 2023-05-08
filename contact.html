@@ -110,21 +110,49 @@
 				Mesaj gönderildi!<a href="" class="close">x</a>
 				</div>
 			</div>			
-				<form method="post" action="contact.php" id="contactform">
-				<div class="form">
-				    <div class="six columns noleftmargin">
-					<label>Ad</label>
-					<input type="text" name="name" class="smoothborder" placeholder="Adınızı Giriniz *"/>
-					</div>
-					<div class="six columns">
-					<label>E-mail Adresiniz</label>
-					<input type="text" name="email" class="smoothborder" placeholder="e-mail adresinizi giriniz *"/>
-					</div>
-					<label>Message</label>
-					<textarea name="comment" class="smoothborder ctextarea" rows="14" placeholder="Mesajınız, geri bildiriminiz *"></textarea>
-					<input type="submit" id="submit" class="readmore" value="Gönder">
-				</div>
-				</form>			
+			<form id="form-contact" method="post" action="https://formsubmit.co/furkanyedek.fy@gmail.com" class="clearfix ts-form ts-form-email">
+                <h4 class="mb-4">Bize Yazın</h4>
+                <div class="form-row">
+                  <div class="form-group col-sm-4">
+                    <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="Ad - Soyad" required>
+                  </div>
+                  <div class="form-group col-sm-4">
+                    <input type="email" class="form-control text-white rounded-0 bg-transparent" name="Email" placeholder="Email" required>
+                  </div>
+                  <div class="form-group col-sm-4">
+                    <input type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="Numaranız" required>
+                  </div>
+                  <div class="form-group col-sm-4">
+                    <label for="gender">Cinsiyet</label>
+                    <div>
+						<label for="gender-erkek">Erkek</label>
+                      <input type="radio" id="gender-erkek" name="gender" value="erkek" required>
+
+                      <label for="gender-kadin">Kadın</label>
+					  <input type="radio" id="gender-kadin" name="gender" value="kadin">
+                      
+                    </div>
+                    
+                  </div>
+                  <div class="form-group col-sm-8">
+                    <label for="hobiler">Destek İsteğiniz</label>
+                    <select class="form-control" id="hobiler" name="hobiler" multiple>
+                      <option value="muhendislik">Eğitim</option>
+                      <option value="ar-ge">Vatandaşlık</option>
+                      <option value="tedarik-zinciri">Göç-Oturma İzni</option>
+                      <option value="lojistik">Dil Okulları</option>
+                      <option value="kalite">Tatil</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-12">
+                    <textarea name="message" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" placeholder="Mesajınız" required></textarea>
+                  </div>
+                  <div class="form-group col-12 mb-0">
+                    <button type="submit" class="btn btn-primary rounded w-md mt-3">Gönder</button>
+                  </div>
+                  <div class="form-contact-status"></div>
+                </div>
+              </form>
 		</div>
 	</div>
 												
