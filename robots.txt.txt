@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /index.html
+Disallow: /Portofolio2.html
+Disallow: /services.html
+Disallow: /about.html
+Disallow: /contact.html
+Disallow: /yüklenme.html
+Disallow: /portofoliodetail2.html
+Disallow: /portofoliodetail.html
+Disallow: /portofoliodetail3.html
+Disallow: /portofoliodetail4.html
+Disallow: /portofoliodetail5.html
+c
